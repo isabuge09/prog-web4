@@ -14,7 +14,7 @@ body{
 .topo{
     background-color: aliceblue;
     margin: 0 auto;
-    width: 80vw;
+    width: 100vw;
     max-height: 35vh;
     display: flex;
     justify-content: center;
@@ -99,7 +99,7 @@ color: white;
 
 .colaboradores{
     margin: 0 auto;
-    width: 80vw;
+    width: 100vw;
     max-height: 35vh;
     display: flex;
     justify-content: center;
@@ -117,7 +117,7 @@ color: white;
 .detalhes{
     background-color: aquamarine;
     margin: 0 auto;
-    width: 80vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -131,7 +131,7 @@ color: white;
 .localizacao {
     background-color: violet;
     margin: 0 auto;
-    width: 80vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -151,7 +151,7 @@ color: white;
 .eventos {
     background-color: lightcoral;
     margin: 0 auto;
-    width: 80vw;
+    width: 100vw;
     max-height: 35vh;
     display: flex;
     justify-content: center;
@@ -161,18 +161,19 @@ color: white;
 
 .avaliacao {
     margin: 0 auto;
-    width: 80vw;
+    width: 100vw;
     max-height: 35vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    background-color: yellowgreen;
 }
 
 .textarea {
     padding: 1vw;
     background-color: yellow;
-    width: 80vw;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
