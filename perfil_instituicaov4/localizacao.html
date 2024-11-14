@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs Responsivas</title>
+    <style>
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .localizacao {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            width: 80vw;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Estilização da div com descrição */
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .content h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* Estilização da div com a imagem */
+        .map {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .map img {
+            width: 100%;
+            max-width: 400px; /* Limita o tamanho máximo da imagem */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Link abaixo da imagem */
+        .map a {
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .map a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .localizacao {
+                flex-direction: column; /* Coloca as divs em coluna em telas menores */
+            }
+
+            .content,
+            .map {
+                flex: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="localizacao">
+        <!-- Div com a descrição -->
+        <div class="content">
+            <h1>Descrição da Imagem</h1>
+            <p>Este é um exemplo de uma descrição que se adapta responsivamente ao tamanho da tela. A imagem ao lado também será ajustada conforme a tela.</p>
+        </div>
+        
+        <!-- Div com a imagem -->
+        <div class="image">
+            <img src="img/map.png" alt="Imagem Exemplo">
+            <a href="#" target="_blank">-> ir para o Geomap</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
