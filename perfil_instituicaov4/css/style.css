@@ -39,6 +39,8 @@ body{
     border-radius: 50%;
     width: 12em;
     height: 12em;
+    position: absolute;
+    top: 10em;
 }
 
 .perfil img {
@@ -51,14 +53,17 @@ body{
     padding: 20px;
     display: flex;
     flex-direction: row;
-    gap: 3em;
-    justify-content: space-evenly
+    justify-content:flex-end;
 }
 
 .desc1{
     padding: 10px;
     word-break: break-word;
-    text-align: justify;
+    width: 75%;
+}
+
+.desc1 h1{
+    text-align: center;
 }
 
 /*Estilização dos icones*/
@@ -336,9 +341,32 @@ body{
         margin-top: 7em;
     }
 
+    .profile{
+       justify-content: center;
+    }
+
+    .perfil{
+        margin-top: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 83.38%;
+    }
+    .perfil img{
+        /* width: 50%; */
+        scale: .35;
+    }
+
     .info-instituicao{
         flex-direction: column;
         align-items: center;
+        text-align: end;
+        gap: 1em;
+    }
+
+    .desc1{
+        margin-top: 4em;
+        text-align: center;
     }
     
     .icones {
@@ -374,8 +402,13 @@ body{
         width: 100%;
     }
 
+    .eventos h1{
+        text-align: center;
+    }
+
     .avaliacao{
         flex-direction: column;
         gap: 0;
+        align-items: center;
     }
 }
