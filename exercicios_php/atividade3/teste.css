@@ -1,0 +1,23 @@
+html,body
+{
+    margin:0;
+}
+html {
+  box-sizing: border-box;
+}
+.form {
+  background-color: #c3dfef;
+  padding: 10px 0;
+  margin:0;
+  font-size: 1.4rem;
+ 	font-family: Arial, Helvetica, sans-serif;
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 40%;
+  }
+
+  
+#tabela tr:nth-child(even){background-color: #f2f2f2;}
